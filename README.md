@@ -1,0 +1,3 @@
+Lecture notes on reinforcement learning (RL) 🤖.
+
+Mainly following the [reinforcement learning specialization on Coursera](https://www.coursera.org/specializations/reinforcement-learning?) and Sutton's reference book (available for free [here](https://d18ky98rnyall9.cloudfront.net/Ph9QFZnEEemRfw7JJ0OZYA_808e8e7d9a544e1eb31ad11069d45dc4_RLbook2018.pdf?Expires=1585094400&Signature=eqTjZoPpFQp6DPvbXgA7eaDkd7mXYMNrnmyu9SCy0c~F699NdhMMnUkbA3FkM2Vykwb0w70F7UqgruwtnrXemHlINw65mFfF7j39s42F7V8EFPvJSfodhOJmeqx7OoRETwfNqT68LcWoqhCO5m2ozoCXRbVEzYZieE53prxt8m0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)) that the course is based on.
