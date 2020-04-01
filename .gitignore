@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*responses/
+
+# PyTest Files
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Standard Virtual Env folder names
+venv/
+venv*
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.idea/
+tmp
+.DS_Store
+*.log*
+*.zip
+*.pyc
+metastore_db
+.cache
+
+# Emacs and other code editors
+*~
+*#
+.vscode
+
+# Typing
+.mypy_cache/
+
+# Notebooks
+.ipynb_checkpoints/*
+
+# Mac files
+.DS_Store
+
+# Analytics files
+analysis/*.json
+analysis/*.png
