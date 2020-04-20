@@ -25,7 +25,7 @@ The value of an action $a$ can be written as a function of the successive reward
 
 Here $Q$ is interpreted as a refined estimate for the actions values.
 
-![image-20200328200428564](/Users/nicolasthiebaut/projects/reinforcement-learning-lecture-notes/assets/image-20200328200428564.png)
+![image-20200328200428564](./assets/image-20200328200428564.png)
 
 ### Non-stationary problems
 

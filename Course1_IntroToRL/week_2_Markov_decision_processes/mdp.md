@@ -1,4 +1,4 @@
-![image-20200403083228317](/Users/nicolasthiebaut/projects/reinforcement-learning-lecture-notes/Course1_IntroToRL/week_2_Markov_decision_processes/assets/image-20200403083228317.png)
+![image-20200403083228317](./assets/image-20200403083228317.png)
 
 
 
