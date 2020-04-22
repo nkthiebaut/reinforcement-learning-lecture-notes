@@ -1,6 +1,6 @@
 # Policy evaluation & improvement
 
-## Policy evaluation
+## Policy evaluation (Prediction)
 
 Assume the environment dynamics $p$ is known. Policy evaluation allows to evaluate the value function of a policy $\pi$ Using the Bellman equation as an update rule:
 
@@ -8,9 +8,9 @@ $v_{k+1}(s) = \mathbb E_{p, \pi} \left[R_{t+1} + \gamma v_k(S_{t+1}) | S_t = s \
 
 $v_k$ is guaranteed to converge to the real $v_\pi$ values by the **policy evaluation theorem** (see book for the proof).
 
-![image-20200420021339607](image-20200420021339607.png)
+![image-20200422010948715](assets/image-20200422010948715.png)
 
-## Policy improvement
+## Policy improvement (Control)
 
 Policy improvement theorem: $\left\{q_\pi(s, \pi'(s)) > q_\pi(s, \pi(s)),\; \forall s \in \mathcal S\right\} \Longrightarrow \pi'>\pi$
 
@@ -52,3 +52,26 @@ We start with a random policy, and initial values of 0 for all states, and a dis
 3. ...
 4. Policy evaluation: $(a, b, c)$ with $c>b>a$  , iteration: $(\rightarrow, \rightarrow, \rightarrow)$  
 
+### Generalized policy iteration
+
+Idea: it is not necessary to complete the evaluation step before proceeding to the iteration one, and *vice versa*, the interplay between evaluation and iteration can be more rapid.
+
+### Value iteration
+
+One sweep of policy evaluation over all the states is followed by a greedy policy iteration step.
+
+![image-20200422010928912](assets/image-20200422010928912.png)
+
+### Synchronous vs Asynchronous Dynamic Programming
+
+### Alertnatives to Dynamic Programming for policy improvement
+
+#### Monte-Carlo sampling
+
+Evaluation $v(s)$ by averaging states returns $G$ reached after following the policy $\pi$ from state $s$.  
+
+🚨Pb: might be slow to converge as there are many returns to average due to the stochasticity of $\pi$ and the environment $p$.
+
+#### Brute-force search
+
+Requires $|\mathcal{A}|^{|\mathcal S|}$ operations, i.e. it is exponential in the number of states → prohibitive (curse of dimensionality).
