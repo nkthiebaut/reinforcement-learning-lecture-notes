@@ -75,3 +75,17 @@ Evaluation $v(s)$ by averaging states returns $G$ reached after following the po
 #### Brute-force search
 
 Requires $|\mathcal{A}|^{|\mathcal S|}$ operations, i.e. it is exponential in the number of states → prohibitive (curse of dimensionality).
+
+
+
+![image-20200423172727043](assets/image-20200423172727043.png)
+
+![image-20200423172744569](assets/image-20200423172744569.png)
+
+![image-20200423172755622](assets/image-20200423172755622.png)
+
+![image-20200423172809151](assets/image-20200423172809151.png)
+
+![image-20200423172820113](assets/image-20200423172820113.png)
+
+![image-20200423172835870](assets/image-20200423172835870.png) 
