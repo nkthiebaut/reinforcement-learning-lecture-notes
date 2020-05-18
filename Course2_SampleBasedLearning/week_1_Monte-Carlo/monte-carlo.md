@@ -41,3 +41,19 @@ The behavioral policy $b$ must **cover** the target policy $\pi$.
 
 
 ![image-20200510152453336](assets/image-20200510152453336.png)
+
+
+
+## Written notes
+
+![image-20200518162455918](assets/image-20200518162455918.png)
+
+![image-20200518162516104](assets/image-20200518162516104.png)
+
+![image-20200518162541441](assets/image-20200518162541441.png)
+
+![image-20200518162552878](assets/image-20200518162552878.png)
+
+![image-20200518162601149](assets/image-20200518162601149.png)
+
+![image-20200518162609620](assets/image-20200518162609620.png)

@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *responses/
+*.md-e
 
 # PyTest Files
 .pytest_cache/
@@ -11,6 +12,7 @@ coverage.xml
 htmlcov/
 
 # Standard Virtual Env folder names
+.env/
 venv/
 venv*
 

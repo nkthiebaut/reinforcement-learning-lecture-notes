@@ -1,0 +1,15 @@
+# Temporal difference for control
+
+
+
+## Written notes
+
+![image-20200518162747704](assets/image-20200518162747704.png)
+
+![image-20200518162757506](assets/image-20200518162757506.png)
+
+![image-20200518162806307](assets/image-20200518162806307.png)
+
+![image-20200518162815031](assets/image-20200518162815031.png)
+
+![image-20200518162823224](assets/image-20200518162823224.png)
