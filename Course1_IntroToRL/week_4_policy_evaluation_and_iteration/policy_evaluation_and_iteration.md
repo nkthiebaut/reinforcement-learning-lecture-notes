@@ -43,7 +43,7 @@ stateDiagram
   cave --> cave: +1
 ```
 
-In the following we represent the states like so ( hills, plain, cave). In this example, the optimal policy is to try to reach the cave wherever you are, or stay there if you are already there, the representation of the optimal policy is the following: $(\rightarrow, \rightarrow, \rightarrow)$
+In the following we represent the states like so (hills, plain, cave). In this example, the optimal policy is to try to reach the cave wherever you are, or stay there if you are already there, the representation of the optimal policy is the following: $(\rightarrow, \rightarrow, \rightarrow)$
 
 We start with a random policy, and initial values of 0 for all states, and a discount factor of 1/2. 
 
