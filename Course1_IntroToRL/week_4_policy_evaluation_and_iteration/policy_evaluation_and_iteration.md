@@ -2,11 +2,11 @@
 
 ## Policy evaluation (Prediction)
 
-Assume the environment dynamics $p$ is known. Policy evaluation allows to evaluate the value function of a policy $\pi$ Using the Bellman equation as an update rule:
+Assume the environment dynamics $p$ is known. Policy evaluation allows to evaluate the value function of a policy $\pi$ using the Bellman equation as an update rule:
 
 $v_{k+1}(s) = \mathbb E_{p, \pi} \left[R_{t+1} + \gamma v_k(S_{t+1}) | S_t = s \right]$.
 
-$v_k$ is guaranteed to converge to the real $v_\pi$ values by the **policy evaluation theorem** (see book for the proof).
+$v_k$ is guaranteed to converge to the real $v_\pi$ values by the **policy evaluation theorem** (see [Introduction to Reinforcement Learning, section 4.1](http://www.incompleteideas.net/book/RLbook2020.pdf) for the proof).
 
 ![image-20200422010948715](assets/image-20200422010948715.png)
 
@@ -31,7 +31,7 @@ stateDiagram
 
 ### Stay warm example
 
-The goal is to find the warm place. The hills are cold, the plains is freezing, and the cave is warm, but the agent cannot go from the hills to the cave directly; also, the agent cannot stay in the hills because it is dangerous.
+The goal is to find the warm place. The hills are cold, the plain is freezing, and the cave is warm, but the agent cannot go from the hills to the cave directly; also, the agent cannot stay in the plain because it is dangerous.
 
 ```mermaid
 stateDiagram
@@ -47,8 +47,8 @@ In the following we represent the states like so (hills, plain, cave). In this e
 
 We start with a random policy, and initial values of 0 for all states, and a discount factor of 1/2. 
 
-1. Policy evaluation: $v_0=( -1, +1/2, -1/2 )$, iteration: $\pi_1(\rightarrow, \rightarrow, \leftarrow)$  
-2. Policy evaluation: $v_1=(-2, +1, -2)+\frac12(+1/2, -1/2, +1/2)=(-2.25, 1.5, -1.5)$  , iteration: $\pi_2=(\rightarrow, \rightarrow, \leftarrow)$  
+1. Policy evaluation: $v_0=( -1, +1/2, 0 )$, iteration: $\pi_1(\rightarrow, \rightarrow, \leftarrow)$  
+2. Policy evaluation: $v_1=(-2, +1, -2)+\frac12(+1/2, 0, +1/2)=(-2.25, 1, -1.5)$  , iteration: $\pi_2=(\rightarrow, \rightarrow, \leftarrow)$  
 3. ...
 4. Policy evaluation: $(a, b, c)$ with $c>b>a$  , iteration: $(\rightarrow, \rightarrow, \rightarrow)$  
 
@@ -58,13 +58,15 @@ Idea: it is not necessary to complete the evaluation step before proceeding to t
 
 ### Value iteration
 
-One sweep of policy evaluation over all the states is followed by a greedy policy iteration step.
+One "sweep" of policy evaluation over all the states is followed by a greedy policy iteration step.
 
 ![image-20200422010928912](assets/image-20200422010928912.png)
 
 ### Synchronous vs Asynchronous Dynamic Programming
 
-### Alertnatives to Dynamic Programming for policy improvement
+TODO
+
+### Alternatives to Dynamic Programming for policy improvement
 
 #### Monte-Carlo sampling
 
