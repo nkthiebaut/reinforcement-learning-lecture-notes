@@ -1,4 +1,4 @@
-# Multi-armed bandits
+# **Multi**-armed bandits
 
 ## RL book (Chapter 2)
 
@@ -23,7 +23,7 @@ An RL algorithm for the multi-armed bandit problem has 3 components:
 
 The value of an action $a$ can be written as a function of the immediate rewards that followed this action each time it was selected, e.g. if the action $a$ has been selected $n$ times before then the corresponding value is 
 
-$$Q_{n+1} \doteq \frac1n \sum_{i=1}^n R_i=\dots=Q_n+\frac1n \left[ R_n-Q_n\right]$$, 
+$$Q_{n+1} \doteq \frac1n \sum_{i=1}^n R_i=\frac1n\left(R_n + (n-1)Q_n \right)=Q_n+\frac1n \left[ R_n-Q_n\right]$$, 
 
 where $R_n-Q_n$ is the **error** of the current estimate, and $\frac1n$ is the **step size**. 
 
